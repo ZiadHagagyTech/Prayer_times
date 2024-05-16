@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقيت الصلاة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>مواقيت الصلاة</h1>
+ <nav class="navbar">
+  <div class="logo"><img src="mosque.png" width="60" height="60">
+</div>
+  <ul class="nav-links">
+    <li><a href="index.html">مواقيت الصلاة</a></li>
+    <li><a href="duas.html">أدعية</a></li>
+    <li><a href="azkar.html">أذكار</a></li>
+  </ul>
+</nav>
+        </div>
+    </header>
+    <main>
+        <div class="calendar">
+            <select id="month" onchange="updatePrayerTimes()">
+                <option value="1">يناير</option>
+                <option value="2">فبراير</option>
+                <option value="3">مارس</option>
+                <option value="4">أبريل</option>
+                <option value="5">مايو</option>
+                <option value="6">يونيو</option>
+                <option value="7">يوليو</option>
+                <option value="8">أغسطس</option>
+                <option value="9">سبتمبر</option>
+                <option value="10">أكتوبر</option>
+                <option value="11">نوفمبر</option>
+                <option value="12">ديسمبر</option>
+            </select>
+            <select id="year" onchange="updatePrayerTimes()">
+                <option value="2024">2024</option>
+            </select>
+          <button onclick="downloadPDF()">تحميل PDF</button>
+        </div>
+        <div id="prayer-times">
+            <!-- Prayer times will be displayed here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 مواقيت الصلاة</p>
+         <a href="https://ziadhagagytech.github.io/Ziad_Hagagy.Portfolio/" target="_blank"><p>Ziad Hagagy</p>        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
